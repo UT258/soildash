@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-200;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-white text-gray-900;
+}
+
+html.dark body {
+  @apply bg-gray-950 text-gray-100;
+}
+
+input, textarea, select {
+  @apply rounded-lg border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-plant-500;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  @apply border-gray-700 bg-gray-900 text-white;
+}
+
+button {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all;
+}
+
+/* Chart.js customization */
+.chartjs-render-monitor {
+  @apply h-full;
+}
