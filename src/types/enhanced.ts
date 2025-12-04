@@ -2,6 +2,8 @@
 // ENHANCED TYPE DEFINITIONS FOR ENTERPRISE IOT DASHBOARD
 // ============================================================================
 
+import type { ReactNode } from 'react'
+
 // Base Telemetry Data
 export interface TelemetryData {
   temp: number
@@ -349,7 +351,7 @@ export interface ModalProps {
   isOpen: boolean
   onClose: () => void
   title: string
-  children: React.ReactNode
+  children: ReactNode
   size?: 'sm' | 'md' | 'lg' | 'xl'
   showCloseButton?: boolean
 }
