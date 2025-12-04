@@ -13,3 +13,6 @@ dist/
 .next/
 coverage/
 .vitest/
+vite.config.js
+vite.config.d.ts
+*.tsbuildinfo
