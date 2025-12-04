@@ -170,7 +170,7 @@ export function useTelemetry(options: UseTelemetryOptions): UseTelemetryState & 
     }
 
     const safeInterval = Math.max(interval, MIN_INTERVAL)
-    intervalIdRef.current = window.setInterval(fetchData, safeInterval)
+    intervalIdRef.current = setInterval(fetchData, safeInterval) as unknown as number
 
     return () => {
       if (intervalIdRef.current) {
